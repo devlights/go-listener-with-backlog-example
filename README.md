@@ -24,5 +24,17 @@ go version go1.19.4 linux/amd64
 
 ```sh
 $ task run
+task: [run] go run .
+[With Context] 07:56:16 start
+[With Context] 07:56:17 dial tcp4 127.0.0.1:33333: i/o timeout
+[With Context] 07:56:17 done
 ```
 
+## REFERENCES
+
+- https://github.com/golang/go/issues/39000
+- https://github.com/golang/go/issues/41470
+- https://github.com/valyala/tcplisten/blob/master/tcplisten.go
+- https://stackoverflow.com/a/49593356
+- https://stackoverflow.com/a/46279623
+- https://meetup-jp.toast.com/1509
